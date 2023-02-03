@@ -14,7 +14,7 @@
         }
         public function getTopFilm(){
             if($this->rating >= 4){
-                return 'e\'\ un bel film';
+                return 'e\' un bel film';
             }else{
                 return $this->rating;
             }

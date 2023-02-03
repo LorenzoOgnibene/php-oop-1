@@ -14,16 +14,19 @@
     </head>
 
     <body>
-        <h1>test</h1>
         <?php 
         
-            $harry = new Movie('Harry potter', 'Fantasy', 'lorem ipsu ecc ecc ecc', 4);
-            var_dump($harry);
+            $harry = new Movie('Harry potter', 'Fantasy', 'lorem ipsu ecc ecc ecc', 3);
+            //var_dump($harry);
             echo "<h1>$harry->title</h1>
                 <p>$harry->category</p>
                 <p>$harry->description</p>";
             echo $harry-> getTopFilm();
-        
+            $shameless = new Movie('Shameless', 'tv shows', 'lorem ipsum ecc ecc', 5);
+            echo "<h1>$shameless->title</h1>
+                <p>$shameless->category</p>
+                <p>$shameless->description</p>";
+            echo $shameless-> getTopFilm();
         ?>
 
     </body>
